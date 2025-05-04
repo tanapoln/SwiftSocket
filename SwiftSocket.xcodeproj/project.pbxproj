@@ -33,17 +33,43 @@
 		375C48351DDC4C56008C701D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C48331DDC4C56008C701D /* Main.storyboard */; };
 		375C48371DDC4C56008C701D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375C48361DDC4C56008C701D /* Assets.xcassets */; };
 		375C483A1DDC4C56008C701D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C48381DDC4C56008C701D /* LaunchScreen.storyboard */; };
+		6199C0462DC75B1300595AB0 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377DAA691DCDE40200009697 /* SwiftSocket.framework */; };
+		6199C0472DC75B1300595AB0 /* SwiftSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 377DAA691DCDE40200009697 /* SwiftSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6199C0482DC75B1300595AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5518C82719A3290F0049DC22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 377DAA681DCDE40200009697;
+			remoteInfo = "SwiftSocket iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6199C04A2DC75B1300595AB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6199C0472DC75B1300595AB0 /* SwiftSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3723138C1DCF84CA0042DA87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = SOURCE_ROOT; };
-		3723138D1DCF84CA0042DA87 /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftSocket.h; path = Sources/SwiftSocket.h; sourceTree = SOURCE_ROOT; };
-		372313901DCF84D80042DA87 /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = SOURCE_ROOT; };
-		372313911DCF84D80042DA87 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = SOURCE_ROOT; };
-		372313941DCF84E30042DA87 /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = SOURCE_ROOT; };
-		372313951DCF84E30042DA87 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = SOURCE_ROOT; };
-		372313981DCF84EC0042DA87 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = SOURCE_ROOT; };
-		372313991DCF84EC0042DA87 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = SOURCE_ROOT; };
+		3723138D1DCF84CA0042DA87 /* SwiftSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftSocket.h; path = Sources/Objc/SwiftSocket.h; sourceTree = SOURCE_ROOT; };
+		372313901DCF84D80042DA87 /* UDPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/Swift/UDPSocket/UDPClient.swift; sourceTree = SOURCE_ROOT; };
+		372313911DCF84D80042DA87 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/Objc/UDPSocket/yudpsocket.c; sourceTree = SOURCE_ROOT; };
+		372313941DCF84E30042DA87 /* TCPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/Swift/TCPSocket/TCPClient.swift; sourceTree = SOURCE_ROOT; };
+		372313951DCF84E30042DA87 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/Objc/TCPSocket/ytcpsocket.c; sourceTree = SOURCE_ROOT; };
+		372313981DCF84EC0042DA87 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Swift/Result.swift; sourceTree = SOURCE_ROOT; };
+		372313991DCF84EC0042DA87 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Swift/Socket.swift; sourceTree = SOURCE_ROOT; };
 		37454ECA1E06158200800AE5 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37454EE81E0617F300800AE5 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Sources/Info-tvOS.plist"; sourceTree = SOURCE_ROOT; };
 		375C482D1DDC4C56008C701D /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6199C0462DC75B1300595AB0 /* SwiftSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,24 +116,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		375BC51D1DCDE86B006AD8F6 /* TCPSocket */ = {
-			isa = PBXGroup;
-			children = (
-				372313941DCF84E30042DA87 /* TCPClient.swift */,
-				372313951DCF84E30042DA87 /* ytcpsocket.c */,
-			);
-			name = TCPSocket;
-			sourceTree = "<group>";
-		};
-		375BC51E1DCDE878006AD8F6 /* UDPSocket */ = {
-			isa = PBXGroup;
-			children = (
-				372313901DCF84D80042DA87 /* UDPClient.swift */,
-				372313911DCF84D80042DA87 /* yudpsocket.c */,
-			);
-			name = UDPSocket;
-			sourceTree = "<group>";
-		};
 		375C482E1DDC4C56008C701D /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +129,13 @@
 			path = "iOS Example";
 			sourceTree = "<group>";
 		};
-		377DAA6A1DCDE40200009697 /* Supporting Files */ = {
+		377DAA6A1DCDE40200009697 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				3723138C1DCF84CA0042DA87 /* Info.plist */,
 				37454EE81E0617F300800AE5 /* Info-tvOS.plist */,
-				3723138D1DCF84CA0042DA87 /* SwiftSocket.h */,
 			);
-			name = "Supporting Files";
-			path = "../SwiftSocket iOS";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5518C82619A3290F0049DC22 = {
@@ -137,6 +144,8 @@
 				5518C83119A329100049DC22 /* Source */,
 				375C482E1DDC4C56008C701D /* iOS Example */,
 				5518C83019A329100049DC22 /* Products */,
+				377DAA6A1DCDE40200009697 /* Resources */,
+				6199C0452DC75B1300595AB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,14 +163,71 @@
 		5518C83119A329100049DC22 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				372313981DCF84EC0042DA87 /* Result.swift */,
-				372313991DCF84EC0042DA87 /* Socket.swift */,
-				375BC51D1DCDE86B006AD8F6 /* TCPSocket */,
-				375BC51E1DCDE878006AD8F6 /* UDPSocket */,
-				377DAA6A1DCDE40200009697 /* Supporting Files */,
+				6199C02D2DC75A4D00595AB0 /* Objc */,
+				6199C02C2DC75A2E00595AB0 /* Swift */,
 			);
 			name = Source;
-			path = SwiftC;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6199C02C2DC75A2E00595AB0 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6199C0412DC75A7900595AB0 /* UDPSocket */,
+				6199C0402DC75A7000595AB0 /* TCPSocket */,
+				372313981DCF84EC0042DA87 /* Result.swift */,
+				372313991DCF84EC0042DA87 /* Socket.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		6199C02D2DC75A4D00595AB0 /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				6199C0432DC75A8600595AB0 /* UDPSocket */,
+				6199C0422DC75A8200595AB0 /* TCPSocket */,
+				3723138D1DCF84CA0042DA87 /* SwiftSocket.h */,
+			);
+			path = Objc;
+			sourceTree = "<group>";
+		};
+		6199C0402DC75A7000595AB0 /* TCPSocket */ = {
+			isa = PBXGroup;
+			children = (
+				372313941DCF84E30042DA87 /* TCPClient.swift */,
+			);
+			path = TCPSocket;
+			sourceTree = "<group>";
+		};
+		6199C0412DC75A7900595AB0 /* UDPSocket */ = {
+			isa = PBXGroup;
+			children = (
+				372313901DCF84D80042DA87 /* UDPClient.swift */,
+			);
+			path = UDPSocket;
+			sourceTree = "<group>";
+		};
+		6199C0422DC75A8200595AB0 /* TCPSocket */ = {
+			isa = PBXGroup;
+			children = (
+				372313951DCF84E30042DA87 /* ytcpsocket.c */,
+			);
+			path = TCPSocket;
+			sourceTree = "<group>";
+		};
+		6199C0432DC75A8600595AB0 /* UDPSocket */ = {
+			isa = PBXGroup;
+			children = (
+				372313911DCF84D80042DA87 /* yudpsocket.c */,
+			);
+			path = UDPSocket;
+			sourceTree = "<group>";
+		};
+		6199C0452DC75B1300595AB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +285,12 @@
 				375C48291DDC4C56008C701D /* Sources */,
 				375C482A1DDC4C56008C701D /* Frameworks */,
 				375C482B1DDC4C56008C701D /* Resources */,
+				6199C04A2DC75B1300595AB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6199C0492DC75B1300595AB0 /* PBXTargetDependency */,
 			);
 			name = "iOS Example";
 			productName = "iOS Example";
@@ -402,6 +470,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6199C0492DC75B1300595AB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 377DAA681DCDE40200009697 /* SwiftSocket iOS */;
+			targetProxy = 6199C0482DC75B1300595AB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		375C48331DDC4C56008C701D /* Main.storyboard */ = {
