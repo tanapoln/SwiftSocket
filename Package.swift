@@ -11,12 +11,12 @@ let package = Package(
     products: [
         .library(
             name: "SwiftSocket",
-            targets: ["SwiftSocketSwift", "SwiftSocketObjc"]
+            targets: ["SwiftSocket", "SwiftSocketObjc"]
         )
     ],
     targets: [
         .target(
-            name: "SwiftSocketSwift",
+            name: "SwiftSocket",
             path: "Sources/Swift"
         ),
         .target(
